@@ -31,6 +31,7 @@ public class IsUnique {
 		}
 		
 		Arrays.sort(chars);
+		
 		for(int  i = 0; i < (chars.length - 1); i++){
 			if(chars[i] == chars[i+1]){
 				return false;

@@ -1,0 +1,29 @@
+
+public class CompressString {
+	
+	public static String compressString(String string1){
+		
+		char[] chars = string1.toCharArray();
+		char[] charsCompressed = new char[string1.length()];
+		
+		int count = 0;
+		int j = 0;
+		
+		char tmp = '#';
+		for (int i = 0; i < chars.length; i++){
+			charsCompressed[i] = chars[i];
+			tmp = chars[i];
+			j=i;
+			while(tmp == chars[j]){
+				count++;
+				j++;
+			}
+			charsCompressed[i] = (char) count;
+			i = i + count;
+		}
+		
+		return string1;
+		
+	}
+
+}

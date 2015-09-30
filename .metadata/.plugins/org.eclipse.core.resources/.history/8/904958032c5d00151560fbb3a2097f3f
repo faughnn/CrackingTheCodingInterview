@@ -1,0 +1,42 @@
+import java.io.IOException;
+
+public class CompressString {
+	
+	public static String compressString(String string1){
+		
+		char[] chars = string1.toCharArray();
+		char[] charsCompressed = new char[string1.length()];
+		
+		int count = 0;
+		int j = 0;
+		
+		char tmp = '#';
+		for (int i = 0; i < chars.length; i++){
+			charsCompressed[i] = chars[i];
+			tmp = chars[i];
+			j=i;
+			while(tmp == chars[j]){
+				count++;
+				j++;
+			}
+			count.toChar
+			charsCompressed[i+1] = (char) count;
+//			i = i + count;
+		}
+		
+		String strFinal = new String(charsCompressed);
+		
+		return strFinal;
+		
+	}
+	
+
+	public static void main(String[] args) throws IOException {
+		
+		String str = new String("aaaabbbbcc");
+		String str2 = compressString(str);
+		System.out.print(str2);
+	}
+	
+
+}

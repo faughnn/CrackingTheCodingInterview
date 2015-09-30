@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session version="1.0">
+<refactoring comment="Rename type 'isUnique' to 'IsUnique'&#13;&#10;- Original project: 'Cracking the Coding Interview'&#13;&#10;- Original element: 'isUnique'&#13;&#10;- Renamed element: 'IsUnique'&#13;&#10;- Update references to refactored element&#13;&#10;- Update textual occurrences in comments and strings" description="Rename type 'isUnique'" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{isUnique.java[isUnique" matchStrategy="1" name="IsUnique" qualified="false" references="true" similarDeclarations="false" stamp="1442166433374" textual="false" version="1.0"/>
+</session>

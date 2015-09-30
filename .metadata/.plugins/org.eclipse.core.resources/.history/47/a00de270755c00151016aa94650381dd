@@ -1,0 +1,40 @@
+import java.io.IOException;
+
+public class ReplaceSpaces {
+
+	public static void replaceSpaces(String str1){
+		
+		char[] chars = str1.toCharArray();
+		int countWhiteSpaces = 0;
+		
+		for(int i = 0; i< chars.length-1; i++){
+			if(chars[i] == ' '){
+				countWhiteSpaces++;
+			}
+		}
+		 
+		char[] charsFinal = new char[countWhiteSpaces];
+		
+		for(int i = 0; i< chars.length-1; i++){
+			if(chars[i] == ' '){
+				charsFinal[i] = '%';
+				i++;
+				charsFinal[i] = '2';
+				i++;
+				charsFinal[i] = '0';
+				i++;
+			} else{
+				chars[i] = charsFinal[i];
+			}		
+		}
+	}
+	
+	public static void main(String[] args) throws IOException {
+		
+		String str = new String("rarara 24332 ");
+		
+//		System.out.println(reverseString("str")); 
+		System.out.println(str);
+		System.out.println(replaceSpaces(str));
+	}
+}
